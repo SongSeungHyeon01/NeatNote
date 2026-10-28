@@ -1,0 +1,83 @@
+# ===== Flutter / Dart =====
+.dart_tool/
+.flutter-plugins
+.flutter-plugins-dependencies
+.packages
+.pub-cache/
+.pub/
+build/
+coverage/
+*.g.dart.incremental
+pubspec_overrides.yaml
+
+# ===== Android =====
+android/.gradle/
+android/captures/
+android/local.properties
+android/key.properties
+android/app/debug/
+android/app/profile/
+android/app/release/
+*.jks
+*.keystore
+*.iml
+
+# ===== iOS / macOS =====
+ios/Pods/
+ios/.symlinks/
+ios/Flutter/Flutter.framework
+ios/Flutter/Flutter.podspec
+ios/Flutter/Generated.xcconfig
+ios/Flutter/ephemeral/
+ios/Flutter/flutter_export_environment.sh
+ios/Runner/GeneratedPluginRegistrant.*
+**/xcuserdata/
+*.mode1v3
+*.mode2v3
+*.perspectivev3
+*.pbxuser
+DerivedData/
+
+# ===== 온디바이스 AI 모델 (무거움 — 다운로드 스크립트로 받기) =====
+*.tflite
+*.gguf
+*.onnx
+*.bin
+*.safetensors
+*.mlmodel
+*.mlpackage/
+models/
+
+# ===== 녹음 · 테스트 데이터 (용량 큼, 공유 불필요) =====
+*.m4a
+*.wav
+*.mp3
+*.aac
+recordings/
+test_data/
+# 단, 정말 올려야 할 샘플이 있으면 아래처럼 예외 추가:
+# !sample/example.wav
+
+# ===== 환경변수 · 비밀값 (보안) =====
+.env
+.env.*
+!.env.example
+*.key
+*.pem
+secrets.*
+google-services.json
+GoogleService-Info.plist
+
+# ===== OS · 에디터 =====
+.DS_Store
+Thumbs.db
+desktop.ini
+.idea/
+.vscode/
+*.swp
+
+# ===== 로그 =====
+*.log
+
+# ===== OMC 에이전트 로컬 상태 (개인 도구 설정) =====
+.omc/
