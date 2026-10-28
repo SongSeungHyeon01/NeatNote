@@ -56,6 +56,32 @@
 
 ---
 
+## 📁 폴더 구조
+
+기능마다 `lib/features/` 아래 정해진 폴더에서 작업합니다. 폴더 이름은 아래 표 그대로 씁니다.
+
+| 폴더 | 기능 |
+|---|---|
+| `lib/features/handwriting/` | 필기 캔버스 · 글씨 보정 |
+| `lib/features/fonts/` | 폰트 변경 |
+| `lib/features/recording/` | 강의 녹음 · 녹음 → 텍스트 |
+| `lib/features/ai_note/` | AI 필기 |
+| `lib/main.dart` | 앱 시작점 (공용) |
+
+### 개발 환경
+
+- Flutter stable (3.47 이상)
+- Android: Android Studio + Android SDK (`flutter doctor`로 확인)
+- iOS 빌드는 Mac + Xcode가 필요합니다
+
+```
+flutter pub get   # 의존성 받기
+flutter run       # 연결된 기기·에뮬레이터에서 실행
+flutter test      # 테스트
+```
+
+---
+
 ## 🤝 협업 규칙
 
 ### 브랜치
